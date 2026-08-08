@@ -1,0 +1,2 @@
+.editorial-events .event-showcase{align-self:start;min-height:690px;border-color:rgba(237,189,131,.28);background:#1b110e}.editorial-events .event-showcase:after{display:none}.editorial-events .event-showcase img{opacity:1;object-position:center;transition:opacity .25s ease,transform .6s ease}.editorial-events .event-showcase:hover img{transform:scale(1.025)}
+@media(max-width:900px){.editorial-events .event-showcase{min-height:430px}}@media(max-width:600px){.editorial-events .event-showcase{min-height:320px}}

@@ -1,0 +1,2 @@
+.editorial-events .event{grid-template-columns:minmax(210px,1.25fr) minmax(120px,.55fr) minmax(145px,.78fr) 60px}.editorial-events .event.active{padding-left:0}
+@media(max-width:900px){.editorial-events .event{grid-template-columns:minmax(0,1.2fr) 115px minmax(120px,.7fr) 50px}}@media(max-width:600px){.editorial-events .event{grid-template-columns:1fr 48px}.editorial-events .event-details,.editorial-events .event-venue{grid-column:1}.editorial-events .event-map{grid-column:2;grid-row:1/4}}
