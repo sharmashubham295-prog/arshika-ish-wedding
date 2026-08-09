@@ -8,7 +8,7 @@ import './event-no-index.css';
 import './hero-photo.css';
 import './mobile-events.css';
 import './event-date-highlight.css';
-
+import './desktop-events.css';
 
 export const metadata = {
   title: 'Dr. Arshika & Ish | 21 September 2026',
