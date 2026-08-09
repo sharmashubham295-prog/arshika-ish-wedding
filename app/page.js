@@ -27,11 +27,12 @@ function Countdown() {
   return <div className="countdown" aria-label="Countdown to wedding">{Object.entries(time).map(([key, value]) => <div className="clock" key={key}><strong>{value}</strong><span>{key}</span></div>)}</div>;
 }
 export default function Home() {
-  const [opened, setOpened] = useState(false); const [musicOn, setMusicOn] = useState(false); const [menu, setMenu] = useState(false); const [activeEvent, setActiveEvent] = useState(0); const audio = useRef(null);
+    const [opened, setOpened] = useState(false); const [musicOn, setMusicOn] = useState(false); const [menu, setMenu] = useState(false); const [activeEvent, setActiveEvent] = useState(0); const audio = useRef(null); const resumeMusicOnReturn = useRef(false);
+
  const startMusic = async () => { const track = audio.current; if (!track) return false; track.volume = 0.38; track.muted = false; if (track.readyState === 0) track.load(); try { await track.play(); setMusicOn(true); return true; } catch { setMusicOn(false); return false; } };
   const openInvitation = async () => { await startMusic(); setOpened(true); };
   const toggleMusic = async () => { const track = audio.current; if (!track) return; if (musicOn) { track.pause(); setMusicOn(false); } else { await startMusic(); } };
-  useEffect(() => { const pauseMusic = () => { const track = audio.current; if (track && !track.paused) { track.pause(); setMusicOn(false); } }; const handleVisibility = () => { if (document.hidden) pauseMusic(); }; document.addEventListener('visibilitychange', handleVisibility); window.addEventListener('pagehide', pauseMusic); return () => { document.removeEventListener('visibilitychange', handleVisibility); window.removeEventListener('pagehide', pauseMusic); pauseMusic(); }; }, []);
+  useEffect(() => { const pauseMusic = () => { const track = audio.current; if (track && !track.paused) { track.pause(); setMusicOn(false); } }; const handleVisibility = async () => { if (document.hidden) { resumeMusicOnReturn.current = Boolean(audio.current && !audio.current.paused); pauseMusic(); } else if (resumeMusicOnReturn.current) { resumeMusicOnReturn.current = false; await startMusic(); } }; document.addEventListener('visibilitychange', handleVisibility); window.addEventListener('pagehide', pauseMusic); return () => { document.removeEventListener('visibilitychange', handleVisibility); window.removeEventListener('pagehide', pauseMusic); pauseMusic(); }; }, []);
 
   return <main>
       <audio ref={audio} loop preload="metadata"><source src="/music/the-long-way-home.mp3" type="audio/mpeg" /></audio>
