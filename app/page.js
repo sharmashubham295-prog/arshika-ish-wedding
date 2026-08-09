@@ -7,13 +7,13 @@ const petals = [
   [7, 10, 0], [19, 24, 3], [32, 7, 6], [48, 17, 2], [63, 5, 8], [78, 22, 4], [89, 9, 7], [12, 68, 5], [91, 72, 1]
 ];
 const events = [
-  ['Sunday · 13 September 2026', 'Sunderkand Path & Lunch', 'A cherished gathering', '10:00 AM · Lunch at 1:30 PM', 'Ram Niwas, Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1200&q=85'],
-  ['Friday · 18 September 2026', 'Sangeet & Bangle Ceremony', 'The Music Night', '06:00 PM', 'Ram Niwas, Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://images.unsplash.com/photo-1519580930435-fbfc9e7ecf26?auto=format&fit=crop&w=1200&q=85'],
-  ['Saturday · 19 September 2026', 'Mehendi', 'Threads of Henna', '06:00 PM', 'Ram Niwas, Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://images.unsplash.com/photo-1525135850648-b42365991054?auto=format&fit=crop&w=1200&q=85'],
-  ['Sunday · 20 September 2026', 'Haldi', 'Turmeric Blessings', '11:00 AM', 'Ram Niwas, Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://images.unsplash.com/photo-1670774837214-21b88943a6bb?auto=format&fit=crop&w=1200&q=85'],
-  ['Sunday · 20 September 2026', 'Shagun', 'A cherished gathering', '08:00 PM', 'Utsav Resort, Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6', 'https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=1200&q=85'],
-  ['Monday · 21 September 2026', 'Reception of Baraat', 'A cherished gathering', '08:00 PM', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://images.pexels.com/photos/32315685/pexels-photo-32315685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'],
-  ['Tuesday · 22 September 2026', 'Doli · Taron Ki Chhaon Mein', 'Taron Ki Chhaon Mein', 'A beautiful new beginning', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=85']
+  ['Sunday · 13 September 2026', 'Sunderkand Path & Lunch', 'With God’s Blessings, A New Beginning', 'Path 10:00 AM Onwards & Lunch at 1:30 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://cdn.sanity.io/images/g8fbccnw/production/75437001a2c3e2c67b75cc5e077cfa39210b06ed-1600x914.jpg'],
+  ['Friday · 18 September 2026', 'Sangeet & Bangle Ceremony', 'The Music Night', '06:00 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://i.pinimg.com/474x/cc/50/44/cc5044884862b07266157974df5066dd.jpg?nii=t'],
+  ['Saturday · 19 September 2026', 'Mehendi', 'Threads of Henna', '06:00 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://cdn.venuelook.com/blog/15-arabic-mehendi-designs-fb828824-d51a-496f-bd30-44d30ec820a4.jpg'],
+  ['Sunday · 20 September 2026', 'Haldi', 'Turmeric Blessings', '11:00 AM', 'At Our residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6JPb9Hc1Sm_4cS_8-llAkutHJUL5WPjiejEakYJHNbFax418w6MhUj35cKV-iWbo&s=10&ec=121902066'],
+  ['Sunday · 20 September 2026', 'Shagun & Engagement', 'A cherished gathering', '08:00 PM', 'Utsav Resort, Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6', 'https://static.vecteezy.com/system/resources/thumbnails/050/344/965/small/wedding-ring-set-with-beautiful-white-roses-photo.jpeg'],
+  ['Monday · 21 September 2026', 'Reception of Baraat', 'A cherished gathering', '08:00 PM', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://t3.ftcdn.net/jpg/04/58/08/18/360_F_458081848_iT9G4aXUCwjyONGs3X29cCWYrw6mgw9b.jpg'],
+  ['Tuesday · 22 September 2026', 'Doli · Taron Ki Chhaon Mein', 'Taron Ki Chhaon Mein', 'A beautiful new beginning', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://www.beforeimarry.com/wp-content/uploads/2018/06/VIDAI-CEREMONYs.jpg']
 ];
 const venues = [
   ['Ram Niwas', 'Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9'],
@@ -28,10 +28,13 @@ function Countdown() {
 }
 export default function Home() {
   const [opened, setOpened] = useState(false); const [musicOn, setMusicOn] = useState(false); const [menu, setMenu] = useState(false); const [activeEvent, setActiveEvent] = useState(0); const audio = useRef(null);
-  const openInvitation = async () => { setOpened(true); try { await audio.current?.play(); setMusicOn(true); } catch { setMusicOn(false); } };
-  const toggleMusic = async () => { if (!audio.current) return; if (musicOn) { audio.current.pause(); setMusicOn(false); } else { try { await audio.current.play(); setMusicOn(true); } catch { setMusicOn(false); } } };
+ const startMusic = async () => { const track = audio.current; if (!track) return false; track.volume = 0.38; track.muted = false; if (track.readyState === 0) track.load(); try { await track.play(); setMusicOn(true); return true; } catch { setMusicOn(false); return false; } };
+  const openInvitation = async () => { await startMusic(); setOpened(true); };
+  const toggleMusic = async () => { const track = audio.current; if (!track) return; if (musicOn) { track.pause(); setMusicOn(false); } else { await startMusic(); } };
+
   return <main>
-    <audio ref={audio} loop preload="none"><source src="https://cdn.pixabay.com/audio/2022/10/25/audio_9462e78d2d.mp3" type="audio/mpeg" /></audio>
+      <audio ref={audio} loop preload="metadata"><source src="/music/the-long-way-home.mp3" type="audio/mpeg" /></audio>
+
     {!opened && <section className="intro"><Petals /><div className="prayer"><div className="om">ॐ</div><p>॥ श्री गणेशाय नमः ॥</p><span>वक्रतुण्ड महाकाय सूर्य कोटि समप्रभः।<br />निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</span></div><button className="envelope" onClick={openInvitation} aria-label="Open the wedding invitation"><span className="flap" /><span className="seal">A <b>&amp;</b> I</span><span className="envelope-names">Arshika <em>&amp;</em> Ish</span></button><p className="open-prompt">Click to open <span>↓</span></p></section>}
     <div className={opened ? 'site revealed' : 'site'}>
       <nav><a href="#home" className="brand" aria-label="Dr. Arshika and Ish home">A<span>&amp;</span>I</a><button className="menu-toggle" onClick={() => setMenu(!menu)} aria-label="Toggle navigation" aria-expanded={menu}>Menu</button><div className={menu ? 'links show' : 'links'}><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#countdown">Countdown</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a></div><button className="music" onClick={toggleMusic} aria-label={musicOn ? 'Turn music off' : 'Turn music on'}>♫ {musicOn ? 'On' : 'Off'}</button></nav>
