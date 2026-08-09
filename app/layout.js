@@ -7,7 +7,7 @@ import './event-venues.css';
 import './event-no-index.css';
 import './hero-photo.css';
 import './mobile-events.css';
-
+import './event-date-highlight.css';
 
 
 export const metadata = {
