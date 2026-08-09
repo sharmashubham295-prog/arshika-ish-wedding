@@ -5,6 +5,7 @@ import './editorial-events.css';
 import './event-photo-panel.css';
 import './event-venues.css';
 import './event-no-index.css';
+import './hero-photo.css';
 
 
 export const metadata = {
