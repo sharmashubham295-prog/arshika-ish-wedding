@@ -31,6 +31,7 @@ export default function Home() {
  const startMusic = async () => { const track = audio.current; if (!track) return false; track.volume = 0.38; track.muted = false; if (track.readyState === 0) track.load(); try { await track.play(); setMusicOn(true); return true; } catch { setMusicOn(false); return false; } };
   const openInvitation = async () => { await startMusic(); setOpened(true); };
   const toggleMusic = async () => { const track = audio.current; if (!track) return; if (musicOn) { track.pause(); setMusicOn(false); } else { await startMusic(); } };
+  useEffect(() => { const pauseMusic = () => { const track = audio.current; if (track && !track.paused) { track.pause(); setMusicOn(false); } }; const handleVisibility = () => { if (document.hidden) pauseMusic(); }; document.addEventListener('visibilitychange', handleVisibility); window.addEventListener('pagehide', pauseMusic); return () => { document.removeEventListener('visibilitychange', handleVisibility); window.removeEventListener('pagehide', pauseMusic); pauseMusic(); }; }, []);
 
   return <main>
       <audio ref={audio} loop preload="metadata"><source src="/music/the-long-way-home.mp3" type="audio/mpeg" /></audio>
@@ -45,6 +46,6 @@ export default function Home() {
       <section id="venue" className="venues"><p className="eyebrow">Find your way</p><h2>Our <i>venues</i></h2><p>Three beautiful places where our story unfolds.</p><div className="venue-grid">{venues.map((venue, i) => <article key={venue[0]}><span>0{i + 1}</span><h3>{venue[0]}</h3><p>{venue[1]}</p><a href={venue[2]} target="_blank" rel="noreferrer" aria-label={`Open ${venue[0]} in Google Maps`}>Open in Maps <b>→</b></a></article>)}</div></section>
       <footer id="rsvp"><div className="footer-ring ring-a" /><div className="footer-ring ring-b" /><p className="eyebrow">With love and warm wishes</p><h2>Your presence is<br /><i>our present</i></h2><p className="special">Special invitation from our cuties Tanaisha and Saavya</p><div className="compliments"><p>Compliments from:</p><span>Bhumika &amp; Sahil Gupta  <br />Shubham Sharma</span></div><div className="contacts"><a href="tel:+919646162284">+91 96461 62284</a><a href="tel:+919646990228">+91 96469 90228</a></div><small>Music: The Long Way Home · Scott Buckley</small></footer>
     </div>
-    
+
   </main>;
 }
