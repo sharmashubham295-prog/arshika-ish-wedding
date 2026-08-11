@@ -11,7 +11,7 @@ import './event-date-highlight.css';
 import './desktop-events.css';
 
 export const metadata = {
-  title: 'Dr. Arshika & Ish | 21 September 2026',
+  title: 'Ish & Dr. Arshika  | 21 September 2026',
   description: 'A celebration of love, family and new beginnings.'
 };
 
