@@ -7,7 +7,7 @@ const petals = [
   [7, 10, 0], [19, 24, 3], [32, 7, 6], [48, 17, 2], [63, 5, 8], [78, 22, 4], [89, 9, 7], [12, 68, 5], [91, 72, 1]
 ];
 const events = [
-  ['Thursday · 17 September 2026', 'Sunderkand Path & Lunch', 'With God’s Blessings, A New Beginning', 'Path 04:00 PM Onwards', 'At Our Residence', 'https://www.google.com/maps?q=32.311924,75.607025', 'https://cdn.sanity.io/images/g8fbccnw/production/75437001a2c3e2c67b75cc5e077cfa39210b06ed-1600x914.jpg'],
+  ['Thursday · 17 September 2026', 'Sunderkand Path', 'With God’s Blessings, A New Beginning', 'At 04:00 PM', 'At Our Residence', 'https://www.google.com/maps?q=32.311924,75.607025', 'https://cdn.sanity.io/images/g8fbccnw/production/75437001a2c3e2c67b75cc5e077cfa39210b06ed-1600x914.jpg'],
   
   ['Saturday · 19 September 2026', 'Mehendi & Cocktail Party', 'Threads of Henna', '06:00 PM', 'At Our Residence', 'https://www.google.com/maps?q=32.311924,75.607025', 'https://cdn.venuelook.com/blog/15-arabic-mehendi-designs-fb828824-d51a-496f-bd30-44d30ec820a4.jpg'],
   ['Sunday · 20 September 2026', 'Shagun & Engagement', 'A cherished gathering', '08:00 PM', 'Utsav Resort, Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6', 'https://static.vecteezy.com/system/resources/thumbnails/050/344/965/small/wedding-ring-set-with-beautiful-white-roses-photo.jpeg'],
