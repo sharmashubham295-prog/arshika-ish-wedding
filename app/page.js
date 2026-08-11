@@ -10,16 +10,15 @@ const events = [
   ['Sunday · 13 September 2026', 'Sunderkand Path & Lunch', 'With God’s Blessings, A New Beginning', 'Path 10:00 AM Onwards & Lunch at 1:30 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://cdn.sanity.io/images/g8fbccnw/production/75437001a2c3e2c67b75cc5e077cfa39210b06ed-1600x914.jpg'],
   ['Friday · 18 September 2026', 'Sangeet & Bangle Ceremony', 'The Music Night', '06:00 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://i.pinimg.com/474x/cc/50/44/cc5044884862b07266157974df5066dd.jpg?nii=t'],
   ['Saturday · 19 September 2026', 'Mehendi', 'Threads of Henna', '06:00 PM', 'At Our Residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://cdn.venuelook.com/blog/15-arabic-mehendi-designs-fb828824-d51a-496f-bd30-44d30ec820a4.jpg'],
-  
+  //['Sunday · 20 September 2026', 'Shagun & Engagement', 'A cherished gathering', '08:00 PM', 'Utsav Resort, Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6', 'https://static.vecteezy.com/system/resources/thumbnails/050/344/965/small/wedding-ring-set-with-beautiful-white-roses-photo.jpeg'],
   ['Sunday · 20 September 2026', 'Haldi', 'Turmeric Blessings', '11:00 AM', 'At Our residence', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6JPb9Hc1Sm_4cS_8-llAkutHJUL5WPjiejEakYJHNbFax418w6MhUj35cKV-iWbo&s=10&ec=121902066'], 
-  ['Sunday · 20 September 2026', 'Shagun & Engagement', 'A cherished gathering', '08:00 PM', 'Utsav Resort, Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6', 'https://static.vecteezy.com/system/resources/thumbnails/050/344/965/small/wedding-ring-set-with-beautiful-white-roses-photo.jpeg'],
   ['Monday · 21 September 2026', 'Reception of Baraat', 'A cherished gathering', '08:00 PM', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://t3.ftcdn.net/jpg/04/58/08/18/360_F_458081848_iT9G4aXUCwjyONGs3X29cCWYrw6mgw9b.jpg'],
   ['Tuesday · 22 September 2026', 'Doli · Taron Ki Chhaon Mein', 'Taron Ki Chhaon Mein', 'A beautiful new beginning', 'Badhani Countryside Resort, Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA', 'https://www.beforeimarry.com/wp-content/uploads/2018/06/VIDAI-CEREMONYs.jpg']
   
 ];
 const venues = [
   ['Ram Niwas', 'Ram Nagar Chowk, Saingarh, Pathankot', 'https://maps.app.goo.gl/PWiDcDZSMjbAxX2a9'],
-  ['Utsav Resort', 'Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6'],
+  //['Utsav Resort', 'Defence Road, Pathankot', 'https://maps.app.goo.gl/iCtyrSCdD1NTBxyi6'],
   ['Badhani Countryside Resort', 'Badhani, Pathankot', 'https://maps.app.goo.gl/e1NJc2uKFoH1U3caA']
 ];
 function Petals() { return <div className="petals" aria-hidden="true">{petals.map(([left, top, delay], i) => <i key={i} style={{ left: `${left}%`, top: `${top}%`, animationDelay: `${delay}s` }} />)}</div>; }
